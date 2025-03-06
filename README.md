@@ -20,14 +20,13 @@ Enjoy your journey into Python!
 - [Variables and Value Assignment](lessons/02_02_variables_and_values_assignment.md) 
 - [Arithmetic, Logical, and Comparison Operators](lessons/02_03_aritmetic_logical_comparison_operators.md)
 - [String Manipulation and Advanced Techniques](lessons/02_04_string_manipulation_and_advanced_techniques.md)
-- Lists, Tuples, Sets, and Dictionaries  
-- Input and Output Operations  
+- [Lists, Tuples, Sets, and Dictionaries](lessons/02_05_lists_tuples_sets_dictionaries.md)  
+- [Input and Output Operations](lessons/02_06_input_and_output_operations.md)  
 
 ### 3. Control Flow  
-3.1. Conditional Statements (if, elif, else)  
-3.2. Loops (for, while)  
-3.3. Flow Control (break, continue, pass)  
-3.4. List Comprehensions and Generators  
+3.1. [Conditional Statements (if, elif, else)](lessons/03_01_conditional_statement_if.md)  
+3.2. [Loops (for, while)](lessons/03_02_loops.md)  
+3.3. [List Comprehensions and Generators](lessons/03_03_list_comprehensions_and_generators.md)  
 
 ### 4. Functions and Modular Programming  
 4.1. Defining and Using Functions (def)  
@@ -144,5 +143,3 @@ Enjoy your journey into Python!
 22.3. Developing a Virtual AI Assistant  
 
 ---
-
-I added a few minor refinements and rewordings for better clarity. Let me know if you want any changes! 🚀

@@ -1,4 +1,4 @@
-## **1.3. Setting Up Virtual Environments**  
+# **1.3. Setting Up Virtual Environments**  
 A virtual environment allows you to create isolated environments for different projects, preventing dependency conflicts.
 
 ### **1.3.1. Creating a Virtual Environment**  
