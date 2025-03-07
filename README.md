@@ -8,20 +8,19 @@ Enjoy your journey into Python!
 
 ## INDEX
 
-1. **Introduction to Python**
-- [Key Features of the Language](lessons/01_01_key_feature_of_the_lenguage.md)
-- [Installing and Configuring Python](lessons/01_02_installing_and_configuring_python.md)
-- [Setting Up Virtual Environments](lessons/01_03_setting_up_virtual_environment.md)
-- [Your First Python Program: "Hello, World"](lessons/01_04_your_first_python_program.md)
+### 1. Introduction to Python 
+1.1 [Key Features of the Language](lessons/01_01_key_feature_of_the_lenguage.md)  
+1.2 [Installing and Configuring Python](lessons/01_02_installing_and_configuring_python.md)  
+1.3 [Setting Up Virtual Environments](lessons/01_03_setting_up_virtual_environment.md)  
+1.4 [Your First Python Program: "Hello, World"](lessons/01_04_your_first_python_program.md)  
 
-2. **Language Fundamentals**
-
-- [Basic Data Types (int, float, str, bool)](lessons/02_01_basic_data_types.md)
-- [Variables and Value Assignment](lessons/02_02_variables_and_values_assignment.md) 
-- [Arithmetic, Logical, and Comparison Operators](lessons/02_03_aritmetic_logical_comparison_operators.md)
-- [String Manipulation and Advanced Techniques](lessons/02_04_string_manipulation_and_advanced_techniques.md)
-- [Lists, Tuples, Sets, and Dictionaries](lessons/02_05_lists_tuples_sets_dictionaries.md)  
-- [Input and Output Operations](lessons/02_06_input_and_output_operations.md)  
+### 2. Language Fundamentals
+2.1 [Basic Data Types (int, float, str, bool)](lessons/02_01_basic_data_types.md)  
+2.2 [Variables and Value Assignment](lessons/02_02_variables_and_values_assignment.md)   
+2.3 [Arithmetic, Logical, and Comparison Operators](lessons/02_03_aritmetic_logical_comparison_operators.md)  
+2.4 [String Manipulation and Advanced Techniques](lessons/02_04_string_manipulation_and_advanced_techniques.md)  
+2.5 [Lists, Tuples, Sets, and Dictionaries](lessons/02_05_lists_tuples_sets_dictionaries.md)  
+2.6 [Input and Output Operations](lessons/02_06_input_and_output_operations.md)   
 
 ### 3. Control Flow  
 3.1. [Conditional Statements (if, elif, else)](lessons/03_01_conditional_statement_if.md)  
@@ -29,12 +28,12 @@ Enjoy your journey into Python!
 3.3. [List Comprehensions and Generators](lessons/03_03_list_comprehensions_and_generators.md)  
 
 ### 4. Functions and Modular Programming  
-4.1. Defining and Using Functions (def)  
-4.2. Parameters and Arguments (*args, **kwargs)  
-4.3. Variable Scope (global, nonlocal)  
-4.4. Lambda Functions  
-4.5. Decorators and Higher-Order Functions  
-4.6. Modules and Packages (import, from ... import)  
+4.1. [Defining and Using Functions (def)](lessons/04_01_defining_and_using_functions.md)  
+4.2. [Parameters and Arguments (*args, **kwargs)](lessons/04_02_parameters_and_arguments.md)  
+4.3. [Variable Scope (global, nonlocal)](lessons/04_03_variable_scope.md)  
+4.4. [Lambda Functions](lessons/04_04_lambda_functions.md)  
+4.5. [Decorators and Higher-Order Functions](lessons/04_05_decorators_and_higher-order_funcions.md)  
+4.6. [Modules and Packages (import, from ... import)](lessons/04_06_modules_and_packagess.md)  
 
 ### 5. Object-Oriented Programming (OOP)  
 5.1. Basics: Classes and Objects  
