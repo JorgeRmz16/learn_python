@@ -36,12 +36,11 @@ Enjoy your journey into Python!
 4.6. [Modules and Packages (import, from ... import)](lessons/04_06_modules_and_packagess.md)  
 
 ### 5. Object-Oriented Programming (OOP)  
-5.1. Basics: Classes and Objects  
-5.2. Instance and Class Methods & Attributes  
-5.3. Encapsulation, Inheritance, and Polymorphism  
-5.4. Special Methods (__init__, __str__, __repr__, __call__)  
-5.5. Static and Class Methods (@staticmethod, @classmethod)  
-5.6. Metaclasses and type()  
+5.1. [Basics: Classes and Objects](lessons/05_01_basic_classes_and_objects.md)  
+5.2. [Instance and Class Methods & Attributes](lessons/05_02_instance_and_class_methods_and_attributes.md)  
+5.3. [Abstraction, Encapsulation, Inheritance, and Polymorphism](lessons/05_03_abstraction_encapsulation_enheritance_polymorphism.md)  
+5.4. [Special Methods (__init__, __str__, __repr__, __call__)](lessons/05_04_special_methods.md)  
+5.5. [Metaclasses and type()](lessons/05_05_metaclasses_and_type.md)  
 
 ### 6. Error Handling and Exceptions  
 6.1. Types of Errors in Python  
