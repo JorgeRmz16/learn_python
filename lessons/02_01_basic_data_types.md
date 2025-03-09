@@ -129,3 +129,13 @@ print(bool("")) #False (An empty string is considered False)
 print(bool("Python")) #True (A non-empty string is considered True)
 ```
 
+### **2.1.5. Summary**  
+
+| Feature | Integer (`int`) | Float (`float`) | String (`str`) | Boolean (`bool`) |  
+|---------|----------------|----------------|----------------|----------------|  
+| Example | `10, -5, 0` | `3.14, -2.5, 1.2e3` | `"hello", 'Python'` | `True, False` |  
+| Created With | Direct assignment | Direct assignment | Quotes (`'`, `"`, `''' """`) | `True` / `False` or comparisons |  
+| Supports Arithmetic | yes| yes | `+`, `*` | Not |  
+| Supports Indexing | Not | Not | Yes | Not |  
+| Mutable | Not | Not | Not | Not |  
+| Conversion | `int(x)` | `float(x)` | `str(x)` | `bool(x)` |

@@ -134,10 +134,177 @@ print(temp("C"))  # Uses __call__ → Output: 25
 
 ---
 
-## Key Takeaways
+### 5.4.5. `__len__` (Getting the Length of an Object)
+The `__len__` method allows an object to work with the built-in `len()` function.
+
+```python
+class Playlist:
+    def __init__(self, songs):
+        self.songs = songs
+
+    def __len__(self):
+        return len(self.songs)
+
+my_playlist = Playlist(["Song1", "Song2", "Song3"])
+print(len(my_playlist))  # Output: 3
+```
+- This makes `Playlist` objects behave like built-in sequences.
+
+---
+
+### 5.4.6. `__getitem__`, `__setitem__`, `__delitem__` (Indexing & Slicing)
+These methods allow objects to behave like lists or dictionaries.
+
+```python
+class Bookshelf:
+    def __init__(self):
+        self.books = {}
+
+    def __setitem__(self, index, book):
+        self.books[index] = book
+
+    def __getitem__(self, index):
+        return self.books.get(index, "Not found")
+
+    def __delitem__(self, index):
+        if index in self.books:
+            del self.books[index]
+
+shelf = Bookshelf()
+shelf[0] = "Python Crash Course"
+shelf[1] = "Automate the Boring Stuff"
+
+print(shelf[0])  # Output: Python Crash Course
+del shelf[1]
+print(shelf[1])  # Output: Not found
+```
+- `__getitem__` lets objects be accessed with `obj[index]`.
+- `__setitem__` allows assignment (`obj[index] = value`).
+- `__delitem__` enables deletion (`del obj[index]`).
+
+---
+
+### 5.4.7. `__iter__` and `__next__` (Making an Object Iterable)
+These methods allow objects to be used in loops.
+
+```python
+class Counter:
+    def __init__(self, max_count):
+        self.max_count = max_count
+        self.current = 0
+
+    def __iter__(self):
+        return self  # Returns an iterator
+
+    def __next__(self):
+        if self.current >= self.max_count:
+            raise StopIteration  # Stops the loop
+        self.current += 1
+        return self.current
+
+counter = Counter(5)
+for num in counter:
+    print(num)  # Output: 1 2 3 4 5
+```
+- `__iter__` returns the iterator (usually `self`).
+- `__next__` defines how iteration progresses.
+
+---
+
+### 5.4.8. `__eq__`, `__lt__`, `__gt__` (Comparison Operators)
+These methods define custom comparison behavior.
+
+```python
+class Box:
+    def __init__(self, volume):
+        self.volume = volume
+
+    def __eq__(self, other):
+        return self.volume == other.volume
+
+    def __lt__(self, other):
+        return self.volume < other.volume
+
+    def __gt__(self, other):
+        return self.volume > other.volume
+
+box1 = Box(30)
+box2 = Box(40)
+
+print(box1 == box2)  # Output: False
+print(box1 < box2)   # Output: True
+print(box1 > box2)   # Output: False
+```
+- `__eq__` (`==`) checks equality.
+- `__lt__` (`<`) checks if an object is smaller.
+- `__gt__` (`>`) checks if an object is greater.
+
+---
+
+### 5.4.9. `__add__`, `__sub__`, `__mul__`, etc. (Operator Overloading)
+These methods allow objects to use arithmetic operators.
+
+```python
+class Money:
+    def __init__(self, amount):
+        self.amount = amount
+
+    def __add__(self, other):
+        return Money(self.amount + other.amount)
+
+    def __sub__(self, other):
+        return Money(self.amount - other.amount)
+
+wallet1 = Money(50)
+wallet2 = Money(30)
+
+wallet3 = wallet1 + wallet2  # Calls __add__
+print(wallet3.amount)  # Output: 80
+
+wallet4 = wallet1 - wallet2  # Calls __sub__
+print(wallet4.amount)  # Output: 20
+```
+- `__add__` enables `+` for objects.
+- `__sub__` enables `-` for objects.
+
+---
+
+### 5.4.10. `__enter__` and `__exit__` (Context Managers)
+These methods allow objects to be used in `with` statements.
+
+```python
+class FileManager:
+    def __init__(self, filename):
+        self.filename = filename
+
+    def __enter__(self):
+        self.file = open(self.filename, "w")
+        return self.file
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.file.close()
+
+with FileManager("test.txt") as f:
+    f.write("Hello, world!")
+```
+- `__enter__` is called when entering `with`.
+- `__exit__` is called when exiting (even if an error occurs).
+
+---
+
+### **Summary of Additional Special Methods**
 | Special Method | Purpose |
 |---------------|---------|
 | `__init__` | Initializes an object |
 | `__str__` | Returns a human-readable string representation |
 | `__repr__` | Returns a developer-friendly string representation |
 | `__call__` | Makes an object callable like a function |
+| `__len__` | Defines `len(obj)` |
+| `__getitem__` | Enables `obj[key]` access |
+| `__setitem__` | Enables `obj[key] = value` |
+| `__delitem__` | Enables `del obj[key]` |
+| `__iter__`, `__next__` | Makes an object iterable |
+| `__eq__`, `__lt__`, `__gt__`, etc. | Enables comparison (`==`, `<`, `>`, etc.) |
+| `__add__`, `__sub__`, etc. | Enables arithmetic operations (`+`, `-`, etc.) |
+| `__enter__`, `__exit__` | Enables `with` statement support |
+

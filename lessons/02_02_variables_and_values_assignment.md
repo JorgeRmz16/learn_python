@@ -3,9 +3,9 @@
 A **variable** in Python is a name that refers to a value stored in memory. Think of it as a **label** for data.  
 
 ### **Key Characteristics of Variables in Python**  
-- **Dynamically typed** → No need to declare a variable type explicitly.  
-- **Can change types** → A variable can hold different types of values over time.  
-- **Stores values in memory** → References an object in memory, not a fixed location.  
+- **Dynamically typed** - No need to declare a variable type explicitly.  
+- **Can change types** - A variable can hold different types of values over time.  
+- **Stores values in memory** - References an object in memory, not a fixed location.  
 - **Case-sensitive** → `myVar` and `myvar` are different variables.  
 
 Example:  
@@ -140,3 +140,19 @@ pi = 3.14
 pi_str = str(pi)  # Convert float to string
 print(type(pi_str))  # Output: <class 'str'>
 ```
+### **2.2.6. Summary**  
+
+| Feature | Description | Example |  
+|---------|-------------|---------|  
+| **Dynamically Typed** | No need to declare a type explicitly | `x = 10`, `y = "Hello"` |  
+| **Case-Sensitive** | Variables `name` and `Name` are different | `age = 25`, `Age = 30` |  
+| **Valid Characters** | Letters, digits (not first), underscores | `user_score = 100` |  
+| **Invalid Characters** | Cannot start with a digit, no spaces, no special characters | `2cool = "Nope"`, `my var = "error"`  |  
+| **Best Practice** | Use `snake_case`, meaningful names | `total_price = 50.75` |  
+| **Constants Convention** | Uppercase variable names | `PI = 3.14159` |  
+| **Simple Assignment** | Assigning a value to a variable | `x = 5` |  
+| **Multiple Assignment** | Assign multiple values at once | `a, b, c = 1, 2, 3` |  
+| **Same Value Assignment** | Assign the same value to multiple variables | `x = y = z = 42` |  
+| **Swapping Values** | Pythonic way to swap variables | `a, b = b, a` |  
+| **Type Checking** | Identify variable type using `type()` | `print(type(x))` → `<class 'int'>` |  
+| **Type Casting** | Convert between types | `int("100")`, `str(3.14)` |  

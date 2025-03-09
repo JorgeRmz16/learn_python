@@ -285,3 +285,16 @@ data = [
 sorted_data = sorted(data, key=lambda x: x["temperature"])
 
 ```
+
+## 2.5.8 Summary
+
+| Feature         | List []          | Tuple ()         | Set {}           | Dictionary {}      |
+|----------------|---------------|---------------|---------------|-----------------|
+| **Ordered**    | Yes         | Yes        | No        | Yes (keys)  |
+| **Mutable**    | Yes         | No        | Yes        | Yes         |
+| **Allows Duplicates** | Yes | Yes        | No        | Keys: No, Values: Yes |
+| **Indexing & Slicing** | Yes | Yes       | No        | No (Keys instead) |
+| **Use Case**   | Dynamic collections | Fixed data | Unique values | Key-value mapping |
+| **Common Methods** | `append()`, `insert()`, `remove()`, `sort()` | `count()`, `index()` | `add()`, `remove()`, `union()` | `keys()`, `values()`, `items()` |
+
+**List Comprehencions** -> [expression for item in iterable if condition]

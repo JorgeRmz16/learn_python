@@ -1,4 +1,4 @@
-# MASTERING PYTHON 
+# PYTHON 
 
 This repository serves as a structured guide to help you master Python, whether you're a complete beginner or looking to deepen your knowledge. It covers fundamental concepts, practical exercises, and real-world projects to enhance your skills. No prior programming experience is required—just a willingness to learn.  
 
@@ -43,9 +43,9 @@ Enjoy your journey into Python!
 5.5. [Metaclasses and type()](lessons/05_05_metaclasses_and_type.md)  
 
 ### 6. Error Handling and Exceptions  
-6.1. Types of Errors in Python  
-6.2. Using try, except, finally, and else  
-6.3. Defining Custom Exceptions  
+6.1. [Types of Errors in Python](lessons/06_01_types_of_errors.md)  
+6.2. [Using try, except, finally, and else](lessons/06_02_try_except_finally_else.md) 
+6.3. [Defining Custom Exceptions](lessons/06_03_defining_custom_exceptions.md)  
 6.4. Debugging with assert and logging  
 
 ### 7. File Handling  
@@ -139,5 +139,3 @@ Enjoy your journey into Python!
 22.1. Building a Compiler in Python  
 22.2. Implementing an HTTP Server from Scratch  
 22.3. Developing a Virtual AI Assistant  
-
----

@@ -2,9 +2,9 @@
 
 Operators are special symbols in Python that **perform operations on variables and values**.  
 Python supports different types of operators, including:  
-- **Arithmetic Operators** → Perform mathematical calculations  
-- **Comparison (Relational) Operators** → Compare values  
-- **Logical Operators** → Combine conditions  
+- **Arithmetic Operators** - Perform mathematical calculations  
+- **Comparison (Relational) Operators** - Compare values  
+- **Logical Operators** - Combine conditions  
 
 ---
 
@@ -141,3 +141,37 @@ print(x)  # Output: 15
 ```
 
 ---
+
+Here’s a summary table covering all the key points from your content:  
+
+### 5.3.7. Summary  
+
+| **Category** | **Operators** | **Description** | **Example** | **Output** |
+|-------------|-------------|----------------|-------------|------------|
+| **Arithmetic** | `+`, `-`, `*`, `/` | Basic math operations | `5 + 3` | `8` |
+|  | `//` | Floor division (integer result) | `10 // 3` | `3` |
+|  | `%` | Modulus (remainder) | `10 % 3` | `1` |
+|  | `**` | Exponentiation | `2 ** 3` | `8` |
+| **Comparison** | `==` | Equal to | `5 == 5` | `True` |
+|  | `!=` | Not equal to | `5 != 3` | `True` |
+|  | `>` | Greater than | `10 > 3` | `True` |
+|  | `<` | Less than | `2 < 5` | `True` |
+|  | `>=` | Greater than or equal to | `10 >= 10` | `True` |
+|  | `<=` | Less than or equal to | `4 <= 6` | `True` |
+| **Logical** | `and` | True if both conditions are True | `True and False` | `False` |
+|  | `or` | True if at least one condition is True | `True or False` | `True` |
+|  | `not` | Reverses Boolean value | `not True` | `False` |
+| **Operator Precedence** | `**` | Highest precedence | `2 ** 3 * 2` | `16` |
+|  | `*`, `/`, `//`, `%` | High precedence | `10 / 2 + 3` | `8.0` |
+|  | `+`, `-` | Medium precedence | `5 + 2 * 3` | `11` |
+|  | Comparison (`==, <, >, <=, >=`) | Lower precedence | `3 > 2 and 5 < 10` | `True` |
+|  | `not` | Lower precedence | `not (5 > 3)` | `False` |
+|  | `and` | Very low precedence | `True and False or True` | `True` |
+|  | `or` | Lowest precedence | `False or True` | `True` |
+| **Augmented Assignment** | `+=` | `x += 2` → `x = x + 2` | `x = 5; x += 3` | `8` |
+|  | `-=` | `x -= 2` → `x = x - 2` | `x = 5; x -= 3` | `2` |
+|  | `*=` | `x *= 2` → `x = x * 2` | `x = 5; x *= 3` | `15` |
+|  | `/=` | `x /= 2` → `x = x / 2` | `x = 10; x /= 2` | `5.0` |
+|  | `//=` | `x //= 2` → `x = x // 2` | `x = 10; x //= 3` | `3` |
+|  | `%=` | `x %= 2` → `x = x % 2` | `x = 10; x %= 3` | `1` |
+|  | `**=` | `x **= 2` → `x = x ** 2` | `x = 3; x **= 2` | `9` |

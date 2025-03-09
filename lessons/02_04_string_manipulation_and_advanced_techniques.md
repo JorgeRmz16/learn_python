@@ -139,7 +139,7 @@ print("Name: {name}, Age: {age}".format(name="Alice", age=25))
 
 ---
 
-## **2.4.4. Escape Characters**
+## 2.4.4. Escape Characters
 Escape characters allow inserting **special characters** inside strings.
 
 | Escape Sequence | Description | Example | Output |
@@ -152,7 +152,7 @@ Escape characters allow inserting **special characters** inside strings.
 
 ---
 
-## **2.4.5. Raw Strings (Avoid Escape Interpretation)**
+## 2.4.5. Raw Strings (Avoid Escape Interpretation)
 ```python
 path = r"C:\Users\Alice\Documents"
 print(path)  # Output: C:\Users\Alice\Documents
@@ -170,7 +170,7 @@ print(reversed_text)  # Output: nohtyP
 
 ---
 
-### **2.4.6.2. Checking for Palindromes**
+### 2.4.6.2. Checking for Palindromes
 ```python
 def is_palindrome(s):
     s = s.lower().replace(" ", "")  # Convert to lowercase and remove spaces
@@ -179,3 +179,30 @@ def is_palindrome(s):
 print(is_palindrome("racecar"))  # Output: True
 print(is_palindrome("hello"))    # Output: False
 ```
+
+---
+### 2.4.7. Summary
+
+| Feature | Description | Example | 
+|---------|-------------|---------| 
+| **Indexing** | Accessing individual characters using index | `word[0]` | `H` |  
+| **Negative Indexing** | Access characters from the end using negative indices | `word[-1]` |  
+| **Slicing** | Extracting substrings with `start:end:step` | `text[:6]` |   
+| **Reversing Strings** | Using slicing with `[::-1]` | `text[::-1]` |   
+| **Uppercase Conversion** | Convert all characters to uppercase | `text.upper()` | 
+| **Lowercase Conversion** | Convert all characters to lowercase | `text.lower()` |
+| **Capitalization** | Capitalize the first letter | `text.capitalize()` |
+| **Title Case** | Capitalize first letter of each word | `text.title()` | 
+| **Swap Case** | Swap uppercase/lowercase | `text.swapcase()` |
+| **Check Alphanumeric** | Check if all characters are letters/numbers | `s.isalnum()` | 
+| **Find Substring** | Get index of first occurrence | `text.find("fun")` |  
+| **Count Substring** | Count occurrences of a substring | `text.count("Python")` |
+| **Replace Substring** | Replace text | `text.replace("Python", "JavaScript")` |
+| **Split String** | Convert string into a list | `sentence.split()` |
+| **Join Strings** | Join list of words into a string | `"-".join(words)` |
+| **Strip Whitespace** | Remove leading/trailing spaces | `text.strip()` | 
+| **f-strings** | Format strings using `{}` | `f"My name is {name}"` |  
+| **`.format()` Method** | Format strings with placeholders | `"Hello {}".format("Alice")` |  
+| **Escape Sequences** | Insert special characters | `"Hello\nWorld"` |  
+| **Raw Strings** | Ignore escape sequences | `r"C:\Users\Alice"` |  
+

@@ -269,7 +269,7 @@ with open("large_file.txt", "r") as file:
 
 ---
 
-### 2.6.6. Summary Table
+### 2.6.6. Summary
 | Feature | Console I/O | File I/O | CSV | JSON |
 |---------|------------|---------|-----|------|
 | Input  | `input()` | `file.read()` | `csv.reader()` | `json.load()` |
