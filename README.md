@@ -55,11 +55,10 @@ Enjoy your journey into Python!
 7.4. File Manipulation with shutil and os  
 
 ### 8. Functional Programming in Python  
-8.1. Pure Functions and Immutability  
-8.2. Using map(), filter(), and reduce()  
-8.3. List, Set, and Dict Comprehensions  
-8.4. Iterators and Iterables  
-8.5. Generators and yield  
+8.1. [Pure Functions and Immutability](lessons/08_01_pure_funcitons_and_inmutability.md)  
+8.2. [Using map(), filter(), and reduce()](lessons/08_02_map_filter_reduce.md)  
+8.3. [List, Set, and Dict Comprehensions](lessons/08_03_lst_set_dict_comprehensions.md)  
+8.4. [Iterators, Iterables and Generators](lessons/08_04_iterators_and_iterables.md)   
 
 ### 9. Concurrent and Parallel Programming  
 9.1. Threads in Python (threading)  
